@@ -13,10 +13,12 @@ import About from './components/About.jsx'
 import Testimonials from './components/Testimonials.jsx'
 import Newsletter from './components/Newsletter.jsx'
 import Footer from './components/Footer.jsx'
+import PopupController from './components/PopupController.jsx'
+import ProductsPage from './pages/ProductsPage.jsx'
+import ThanksPage from './pages/ThanksPage.jsx'
 
 const SECTION_BY_PATH = {
   '/': 'top',
-  '/products': 'shop',
   '/about': 'about',
   '/contact': 'contact',
 }
@@ -57,11 +59,14 @@ export default function App() {
     <BrowserRouter>
       <ScrollManager />
       <Routes>
-        {Object.keys(SECTION_BY_PATH).map((path) => (
-          <Route key={path} path={path} element={<Landing />} />
-        ))}
+        <Route path="/" element={<Landing />} />
+        <Route path="/about" element={<Landing />} />
+        <Route path="/contact" element={<Landing />} />
+        <Route path="/products" element={<ProductsPage />} />
+        <Route path="/thanks" element={<ThanksPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+      <PopupController />
     </BrowserRouter>
   )
 }

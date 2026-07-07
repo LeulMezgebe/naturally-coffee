@@ -6,13 +6,13 @@ export default function Hero() {
     <section className="hero" id="top">
       <div className="container hero__inner">
         <div className="hero__content">
-          <p className="eyebrow fade-up">Organic &middot; Ethically Sourced</p>
+          <p className="eyebrow fade-up">Ethically Sourced &middot; Small Batch</p>
           <h1 className="hero__title fade-up delay-1">
             Coffee the way nature intended.
           </h1>
           <p className="hero__tagline fade-up delay-2">
-            Small-batch roasted, organic beans sourced directly from farmers
-            who care for the land as much as we care for the cup.
+            Small-batch roasted beans sourced directly from farmers who care
+            for the land as much as we care for the cup.
           </p>
           <div className="hero__actions fade-up delay-3">
             <Link to="/products" className="btn">
@@ -25,7 +25,7 @@ export default function Hero() {
           <ul className="hero__stats fade-up delay-4">
             <li>
               <strong>100%</strong>
-              <span>Certified organic</span>
+              <span>Ethically sourced</span>
             </li>
             <li>
               <strong>12</strong>

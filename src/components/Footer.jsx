@@ -29,8 +29,8 @@ export default function Footer() {
             <span>Naturally Coffee</span>
           </Link>
           <p>
-            Organic, ethically sourced coffee — roasted in small batches and
-            shipped fresh to your door.
+            Ethically sourced coffee — roasted in small batches and shipped
+            fresh to your door. Good coffee, naturally.
           </p>
           <div className="footer__socials">
             {SOCIALS.map((social) => (

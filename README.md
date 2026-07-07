@@ -1,6 +1,6 @@
 # Naturally Coffee
 
-Landing page for **Naturally Coffee** — a brand selling organic, ethically sourced coffee beans. Built with React 19 and Vite 6 (JavaScript).
+Landing page for **Naturally Coffee** — a brand selling ethically sourced coffee beans. Built with React 19 and Vite 6 (JavaScript).
 
 ## Getting started
 

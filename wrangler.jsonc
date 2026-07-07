@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "naturally-coffee",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-05-01",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "WAITLIST",
+      // TODO: create the namespace (`wrangler kv namespace create WAITLIST`)
+      // and paste its id here.
+      "id": "TODO_WAITLIST_NAMESPACE_ID"
+    }
+  ],
+  "vars": {
+    // Rotate before sharing the export URL; use `wrangler secret put` for
+    // anything more sensitive than this CSV export gate.
+    "EXPORT_SECRET": "TODO_SET_A_LONG_RANDOM_STRING"
+  }
+}

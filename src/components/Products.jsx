@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import BeanIcon from './BeanIcon.jsx'
 
 const PRODUCTS = [
@@ -61,9 +62,9 @@ export default function Products() {
                     {product.price}
                     <small> / 12 oz</small>
                   </span>
-                  <button type="button" className="btn btn--small">
-                    Add to Cart
-                  </button>
+                  <Link to="/products" className="btn btn--small">
+                    Buy now
+                  </Link>
                 </div>
               </div>
             </article>

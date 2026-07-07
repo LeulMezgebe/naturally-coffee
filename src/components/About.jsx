@@ -5,7 +5,7 @@ const VALUES = [
   },
   {
     title: 'Grown without compromise',
-    text: 'Every bean is certified organic — shade-grown under native canopy, free of synthetic pesticides and fertilizers.',
+    text: 'Every bean is shade-grown under native canopy, free of synthetic pesticides and fertilizers.',
   },
   {
     title: 'Gentler on the planet',
