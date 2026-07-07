@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import BeanIcon from './BeanIcon.jsx'
 
 export default function Hero() {
@@ -16,12 +17,12 @@ export default function Hero() {
             who care for the land as much as we care for the cup.
           </p>
           <div className="hero__actions fade-up delay-3">
-            <a href="#shop" className="btn">
+            <Link to="/products" className="btn">
               Shop Now
-            </a>
-            <a href="#about" className="btn btn--ghost">
+            </Link>
+            <Link to="/about" className="btn btn--ghost">
               Our Story
-            </a>
+            </Link>
           </div>
           <ul className="hero__stats fade-up delay-4">
             <li>

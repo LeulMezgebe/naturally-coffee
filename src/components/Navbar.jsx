@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import BeanIcon from './BeanIcon.jsx'
 
 const LINKS = [
-  { label: 'Shop', href: '#shop' },
-  { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Shop', to: '/products' },
+  { label: 'About', to: '/about' },
+  { label: 'Contact', to: '/contact' },
 ]
 
 export default function Navbar() {
@@ -21,10 +22,10 @@ export default function Navbar() {
   return (
     <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <nav className="navbar__inner container" aria-label="Main navigation">
-        <a href="#top" className="navbar__brand" onClick={() => setMenuOpen(false)}>
+        <Link to="/" className="navbar__brand" onClick={() => setMenuOpen(false)}>
           <BeanIcon size={26} />
           <span>Naturally Coffee</span>
-        </a>
+        </Link>
 
         <button
           className="navbar__toggle"
@@ -39,20 +40,20 @@ export default function Navbar() {
 
         <ul className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`}>
           {LINKS.map((link) => (
-            <li key={link.href}>
-              <a href={link.href} onClick={() => setMenuOpen(false)}>
+            <li key={link.to}>
+              <Link to={link.to} onClick={() => setMenuOpen(false)}>
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
           <li>
-            <a
-              href="#shop"
+            <Link
+              to="/products"
               className="btn btn--small"
               onClick={() => setMenuOpen(false)}
             >
               Shop Now
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

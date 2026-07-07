@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import BeanIcon from './BeanIcon.jsx'
 
 const SOCIALS = [
@@ -23,10 +24,10 @@ export default function Footer() {
     <footer className="footer" id="contact">
       <div className="container footer__inner">
         <div className="footer__brand">
-          <a href="#top" className="navbar__brand">
+          <Link to="/" className="navbar__brand">
             <BeanIcon size={26} />
             <span>Naturally Coffee</span>
-          </a>
+          </Link>
           <p>
             Organic, ethically sourced coffee — roasted in small batches and
             shipped fresh to your door.
@@ -57,9 +58,9 @@ export default function Footer() {
         <div className="footer__col">
           <h4>Explore</h4>
           <ul>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#top">Home</a></li>
+            <li><Link to="/products">Shop</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/">Home</Link></li>
           </ul>
         </div>
 
