@@ -8,9 +8,7 @@ export default function Hero() {
         <div className="hero__content">
           <p className="eyebrow fade-up">Organic &middot; Ethically Sourced</p>
           <h1 className="hero__title fade-up delay-1">
-            Coffee the way
-            <br />
-            nature intended.
+            Coffee the way nature intended.
           </h1>
           <p className="hero__tagline fade-up delay-2">
             Small-batch roasted, organic beans sourced directly from farmers
@@ -40,25 +38,14 @@ export default function Hero() {
           </ul>
         </div>
 
-        <div className="hero__visual" aria-hidden="true">
-          <div className="hero__circle">
-            <div className="hero__cup">
-              <div className="hero__steam">
-                <span />
-                <span />
-                <span />
-              </div>
-              <BeanIcon size={72} />
-            </div>
-          </div>
-          <div className="hero__bean hero__bean--1">
-            <BeanIcon size={34} />
-          </div>
-          <div className="hero__bean hero__bean--2">
-            <BeanIcon size={24} />
-          </div>
-          <div className="hero__bean hero__bean--3">
-            <BeanIcon size={44} />
+        <div className="hero__visual fade-up delay-2" aria-hidden="true">
+          <div className="hero__panel">
+            <BeanIcon size={96} />
+            <span className="hero__panel-label">
+              Naturally
+              <br />
+              Coffee
+            </span>
           </div>
         </div>
       </div>

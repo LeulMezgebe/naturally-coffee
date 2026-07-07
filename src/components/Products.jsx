@@ -50,14 +50,7 @@ export default function Products() {
           {PRODUCTS.map((product) => (
             <article key={product.name} className="product-card">
               <div className={`product-card__visual ${product.tint}`}>
-                <div className="product-card__bag">
-                  <BeanIcon size={40} />
-                  <span className="product-card__bag-label">
-                    Naturally
-                    <br />
-                    Coffee
-                  </span>
-                </div>
+                <BeanIcon size={56} />
               </div>
               <div className="product-card__body">
                 <span className="product-card__roast">{product.roast}</span>
